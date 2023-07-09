@@ -9,4 +9,4 @@ chmod 0755 addips.sh
 chmod 0755 Configure
 chmod 0755 Menu
 chmod 0755 Rotation
-sh Configure
+./Configure

@@ -2,6 +2,7 @@
 #####################################################################
 #######            Initialize Script                        #########
 #####################################################################
+apt-get update -y
 apt install git
 git clone https://github.com/khacnam/dev.git
 cd dev

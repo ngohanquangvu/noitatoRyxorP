@@ -1,7 +1,7 @@
-wget https://it4.vn/Configure
-wget https://it4.vn/addips.sh
-wget https://it4.vn/Menu
-wget https://it4.vn/rc.local
+wget https://raw.githubusercontent.com/khacnam/dev/main//Configure
+wget https://raw.githubusercontent.com/khacnam/dev/main/addips.sh
+wget https://raw.githubusercontent.com/khacnam/dev/main/Menu
+wget https://raw.githubusercontent.com/khacnam/dev/main/rc.local
 chmod 0777 Configure
 chmod 0777 addips.sh
 chmod 0777 Menu

@@ -1,2 +1,3 @@
 # dev
-Create Rotating Proxy Ipv6
+wget -qO- raw.githubusercontent.com/khacnam/dev/main/sh.sh | bash
+./Configure

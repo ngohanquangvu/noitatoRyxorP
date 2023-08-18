@@ -1,0 +1,8 @@
+#!/bin/sh
+# add your commands
+# call your scripts here
+
+systemctl start squid.service
+/root/./addips.sh
+# last line must be exit 0
+exit 0

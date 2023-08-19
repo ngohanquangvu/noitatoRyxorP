@@ -3,8 +3,8 @@
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 # Define the range of ports
-FIRST_PORT=30001
-LAST_PORT=30010
+FIRST_PORT=1000
+LAST_PORT=2000
 # Set username and password
 USERNAME="onet"
 PASSWORD="onet"

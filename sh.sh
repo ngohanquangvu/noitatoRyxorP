@@ -226,9 +226,9 @@ systemctl restart squid
 
 # Set up crontab job to run the entire script every 15 minutes
 # Check if the cron job already exists before adding it
-if ! crontab -l | grep -q "/root/setup.sh"; then
+if ! crontab -l | grep -q "/root/gen_ipv6.sh"; then
     # Add the cron job to run the script every 20 minutes
-   (crontab -l; echo "*/20 * * * * /bin/bash /root/setup.sh >> /root/cron.log 2>&1") | crontab -
+   (crontab -l; echo "*/20 * * * * /bin/bash /root/gen_ipv6.sh >> /root/cron.log 2>&1") | crontab -
     echo "Added cron job to run the script every 20 minutes."
 else
     echo "Cron job already exists."

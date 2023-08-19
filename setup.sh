@@ -24,7 +24,7 @@ IP6_PREFIX=$(curl -6 -s icanhazip.com | cut -f1-3 -d':')
 echo "Internal ip = ${IP4}. Prefix for ip6 = ${IP6_PREFIX}"
 
 # Define an array of characters for generating IPv6 addresses
-array= (1 2 3 4 5 6 7 8 9 0 a b c d e f)
+array=(1 2 3 4 5 6 7 8 9 0 a b c d e f)
 
 # Define a function to generate an IPv6 address with random segments
 gen48() {

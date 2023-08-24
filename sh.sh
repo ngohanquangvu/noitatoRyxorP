@@ -29,7 +29,7 @@ refresh_pattern ^ftp:           1440    20%     10080
 refresh_pattern ^gopher:        1440    0%      1440
 refresh_pattern -i (/cgi-bin/|\?) 0     0%      0
 refresh_pattern .               0       20%     4320
-auth_param basic program /usr/lib/squid/basic_ncsa_auth /etc/squid/squid.passwords
+auth_param basic program /usr/local/squid/libexec/basic_ncsa_auth /etc/squid/squid.passwords
 auth_param basic children 1024
 auth_param basic realm Proxy
 auth_param basic credentialsttl 2 hours

@@ -3,7 +3,6 @@
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 apt update && apt upgrade -y
 sudo apt install build-essential -y
-cd /opt
 wget http://www.squid-cache.org/Versions/v4/squid-4.10.tar.gz
 tar xzf squid-4.10.tar.gz
 cd cd squid-4.10

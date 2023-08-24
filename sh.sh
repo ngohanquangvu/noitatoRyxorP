@@ -126,6 +126,7 @@ reply_header_access All deny all
 shutdown_lifetime 3 seconds
 include /etc/squid/outgoing.conf
 EOF
+cd 
 wget https://raw.githubusercontent.com/khacnam/dev/main/setup.sh
 chmod 0755 /root/setup.sh
 ./setup.sh

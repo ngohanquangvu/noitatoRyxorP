@@ -102,6 +102,7 @@ generate_tcp_outgoing >> /etc/squid/outgoing.conf
 generate_interfaces
 
 # Restart Squid service
+/usr/local/squid/sbin/squid -f /etc/squid/squid.conf
 systemctl restart squid
 
 # Set up crontab job to run the entire script every 15 minutes

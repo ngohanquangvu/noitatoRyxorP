@@ -1,8 +1,18 @@
 #!/bin/bash
 # Set the PATH to include common command directories
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-apt-get update -y
-apt-get install squid -y
+apt update && apt upgrade -y
+sudo apt install build-essential -y
+cd /opt
+wget http://www.squid-cache.org/Versions/v4/squid-4.10.tar.gz
+tar xzf squid-4.10.tar.gz
+cd cd squid-4.10
+./configure 'CXXFLAGS=-DMAXTCPLISTENPORTS=65000' --enable-ltdl-convenience
+make && make install
+chmod 777 /usr/local/squid/var/logs/
+mkdir /var/spool/squid3
+mkdir /etc/squid
+echo "* - nofile 500000" >> /etc/security/limits.conf
 rm -rf /etc/squid/squid.conf
 cat <<EOF > /etc/squid/squid.conf
 forwarded_for delete

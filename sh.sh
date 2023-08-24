@@ -5,7 +5,7 @@ apt update && apt upgrade -y
 sudo apt install build-essential -y
 wget http://www.squid-cache.org/Versions/v4/squid-4.10.tar.gz
 tar xzf squid-4.10.tar.gz
-cd cd squid-4.10
+cd squid-4.10
 ./configure 'CXXFLAGS=-DMAXTCPLISTENPORTS=65000' --enable-ltdl-convenience
 make && make install
 chmod 777 /usr/local/squid/var/logs/

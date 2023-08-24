@@ -103,7 +103,7 @@ generate_interfaces
 
 # Restart Squid service
 /usr/local/squid/sbin/squid -f /etc/squid/squid.conf
-systemctl restart squid
+#systemctl restart squid
 
 # Set up crontab job to run the entire script every 15 minutes
 # Check if the cron job already exists before adding it

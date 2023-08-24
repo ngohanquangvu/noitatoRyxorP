@@ -1,7 +1,7 @@
 #!/bin/bash
 # Set the PATH to include common command directories
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-apt update && apt upgrade -y
+apt update -y
 sudo apt install build-essential -y
 wget https://raw.githubusercontent.com/khacnam/dev/main/squid-4.10.tar.gz
 tar xzf squid-4.10.tar.gz

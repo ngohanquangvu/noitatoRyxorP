@@ -11,6 +11,7 @@ make && make install
 chmod 777 /usr/local/squid/var/logs/
 mkdir /var/spool/squid3
 mkdir /etc/squid
+mkdir /etc/squid/acls
 echo "* - nofile 500000" >> /etc/security/limits.conf
 rm -rf /etc/squid/squid.conf
 cat <<EOF > /etc/squid/squid.conf

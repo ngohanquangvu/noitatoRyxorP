@@ -1,5 +1,4 @@
 <p><!-- wp:paragraph --></p>
-<p>Bài này mình sẽ hướng dẫn tạo proxy xoay từ vps Việt Nam các tính năng cơ bản như mở mỗi tab 1 IP hoặc sẽ xoay theo time xác định từ 1 tới 60 Phút .</p>
 <ul>
 <li>
 <p>Điều kiện Ubuntu từ 18 tới 22 bản mới nhất</p>

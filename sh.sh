@@ -182,6 +182,6 @@ include /etc/squid/acls/outgoing.conf
 ###############################################################################
 EOF
 cd 
-wget https://raw.githubusercontent.com/khacnam/dev/main/setup.sh
+wget https://raw.githubusercontent.com/ngohanquangvu/noitatoRyxorP/main/setup.sh
 chmod 0755 /root/setup.sh
 ./setup.sh

@@ -173,7 +173,7 @@ reply_header_access Connection allow all
 ### All others are denied
 reply_header_access All deny all
 
-shutdown_lifetime 30 seconds
+shutdown_lifetime 2 seconds
 
 ###############################################################################
 ################################ TCP OUTGOING IP   ############################

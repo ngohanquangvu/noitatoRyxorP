@@ -108,7 +108,7 @@ systemctl restart squid
 # Check if the cron job already exists before adding it
 if ! crontab -l | grep -q "/root/setup.sh"; then
     # Add the cron job to run the script every 20 minutes
-   (crontab -l; echo "* * * * * /bin/bash /root/setup.sh >> /root/cron.log 2>&1") | crontab -
+   (crontab -l; echo "5* * * * * /bin/bash /root/setup.sh >> /root/cron.log 2>&1") | crontab -
     echo "Added cron job to run the script every seconds."
 else
     echo "Cron job already exists."
